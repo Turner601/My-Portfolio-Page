@@ -1,0 +1,33 @@
+/* Header/Sub-header Text: font-family: 'Pacifico', cursive; */
+/* Normal Text: font-family: Sans-serif */
+
+:root {
+    --header-bg-color: #212529;
+    --main-bg-color: #ADB5BD;
+    --footer-bg-color: #212529;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header, .footer {
+    background-color: var(--header-bg-color);
+}
+
+.main {
+    background-color: var(--main-bg-color);
+    color: black;
+}
+
+.title-header, .languages-header-item, .projects-header-item {
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-item {
+    color: white;
+}
+
+.jumbotron-text {
+    font-family: sans-serif;
+}
