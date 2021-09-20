@@ -1,18 +1,39 @@
-/* Header/Sub-header Text: font-family: 'Pacifico', cursive; */
-/* Normal Text: font-family: Sans-serif */
+/* Header/Sub-header Text: font-family: 'Lobster', cursive; */
+/* Normal Text: font-family: 'Roboto', sans-serif; */
 
 :root {
-    --header-bg-color: #212529;
+    --header-bg-color: #070707;
     --main-bg-color: #ADB5BD;
-    --footer-bg-color: #212529;
+    --footer-bg-color: #070707;
 }
 
 * {
     box-sizing: border-box;
 }
 
-.header, .footer {
-    background-color: var(--header-bg-color);
+.nav-item:hover {
+    color: #d7c177;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: white;
+}
+
+.icon:hover {
+    color: #d7c177;
+}
+
+/* Start Header */
+
+.header {
+    background: rgb(7,7,7);
+    background: linear-gradient(90deg, rgba(7,7,7,1) 0%, rgba(7,7,7,1) 50%, rgba(60,60,60,1) 100%); 
 }
 
 .main {
@@ -21,16 +42,102 @@
 }
 
 .title-header, .languages-header-item, .projects-header-item {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Lobster', cursive;
+}
+
+.navigation-list {
+    padding: 25px;
 }
 
 .nav-item {
     color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.main-section1, .main-section2, .main-section3 {
+    padding-top: 100px;
+}
+
+.main-section3 {
+    padding-bottom: 100px;
 }
 
 .jumbotron-text {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+.read-more-button:hover {
+    color: #d7c177;
+}
+
+/* Start Footer */
+
+.footer {
+    background-color: var(--header-bg-color);
+    padding: 25px;
+}
+
+.icon-github, .icon-envelope {
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.colophon-text {
+    color: white;
+}
+
+/* End Footer */
 
 /* About Page */
 
+.about-me-header {
+    padding: 15px;
+    font-family: 'Lobster', cursive;
+}
+
+.about-me-header:before {
+    content: "";
+    display: block;
+    width: 750px;
+    height: 2px;
+    background: black;
+    left: 0;
+    top: 52.5%;
+    position: absolute;
+}
+
+.about-me-header:after {
+    content: "";
+    display: block;
+    width: 750px;
+    height: 2px;
+    background: black;
+    right: 0;
+    top: 52.5%;
+    position: absolute;
+}
+
+.about-me-pic {
+    padding: 10px;
+}
+
+.military-picture1 {
+    margin-right: 100px;
+}
+
+.military-picture2 {
+    margin-left: 100px;
+}
+
+.hobbie-picture1 {
+    margin-right: 100px;
+}
+
+.hobbie-picture2 {
+    margin-left: 100px;
+}
+
+figcaption {
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+}
