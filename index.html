@@ -22,13 +22,13 @@
                 </div>
                 <div class="col-12 d-inline-flex justify-content-around align-items-center navigation-list">
                     <div class="navagation-item">
-                        <a href="#lang" class="text-decoration-none nav-item">Languages</a>
+                        <a href="#lang" class="text-decoration-none nav-item" title="Languages">Languages</a>
                     </div>
                     <div class="navagation-item">
-                        <a href="#projects" class="text-decoration-none nav-item">Projects</a>
+                        <a href="#projects" class="text-decoration-none nav-item" title="My Projects">Projects</a>
                     </div>
                     <div class="navagation-item">
-                        <a href="#link" class="text-decoration-none nav-item">Contact Me</a>
+                        <a href="#link" class="text-decoration-none nav-item" title="Contact Me">Contact Me</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                         <p class="lead currently-know">HTML and CSS</p>
                         <hr class="my-4 line-gap">
                         <p class="jumbotron-text">I'm currently attending the Mississippi Coding Academy where we are learning HTML and CSS as of writing this. I'm new to all this but thouroughly enjoying learning how it all works and seeing my progress as time goes on. I'm a 10 year veteran and loved every day while I was in the Air Force. Now on this new adventure and can't be more happy. Been a single parent for the last 8 years as well which has also been fun and a rollercoaster ride at times. To learn more about me just click on the button below.</p>
-                        <a class="btn btn-dark btn-lg read-more-button" href="about.html"  target="_blank" role="button">Read More</a>
+                        <a class="btn btn-dark btn-lg read-more-button" href="about.html"  target="_blank" role="button" title="Read More">Read More</a>
                     </div>
                 </div>
                 <div class="col-6 text-end my-headshot">
@@ -63,13 +63,13 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-4 css-image">
-                    <img src="Media/CSS_Logo.png" alt="CSS Logo" class="css-logo img-fluid">
+                    <img src="Media/CSS_Logo.png" alt="CSS Logo" class="css-logo-main img-fluid">
                 </div>
                 <div class="col-4 language-text d-inline align-self-center">
-                    <p class="language-text-item">These are the two languages I'm currently learning. We'll be moving on to Javascript/JQuery very soon. I'm also learning Python on the side.</p>
+                    <p class="language-text-item">These are the two languages I'm currently learning. Javascript and JQuery will be next along with other things. I'm also learning Python on the side.</p>
                 </div>
                 <div class="col-md-4 html-image">
-                    <img src="Media/HTML_Logo.png" alt="HTML Logo" class="html-logo img-fluid">
+                    <img src="Media/HTML_Logo.png" alt="HTML Logo" class="html-logo-main img-fluid">
                 </div>
             </div>
         </div>
@@ -77,10 +77,10 @@
             <div class="projects-header">
                 <h1 class="projects-header-item text-center" id="projects">Projects</h1>
             </div>
-            <div class="row">
+            <div class="row project-row1">
                 <div class="col-md-3 project-card bloom-card">
                     <div class="card" style="width: 18rem;">
-                        <img src="media/Bloom-Screenshot.png" class="card-img-top img-fluid bloom-img" alt="Bloom Project Preview">
+                        <img src="Media/Bloom-Screenshot.png" class="card-img-top img-fluid bloom-img" alt="Bloom Project Preview">
                         <div class="card-body bloom-body">
                             <h5 class="card-title bloom-title">Bloom Landing Page</h5>
                             <p class="card-text bloom-text">Here is my Bloom Landing Page. One of the first I worked on using HTML/CSS</p>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-md-3 project-card aditii-card">
                     <div class="card" style="width: 18rem;">
-                        <img src="media/Aditii-Screenshot.png" class="card-img-top img-fluid aditii-img" alt="Aditii Project Preview">
+                        <img src="Media/Aditii-Screenshot.png" class="card-img-top img-fluid aditii-img" alt="Aditii Project Preview">
                         <div class="card-body aditii-body">
                             <h5 class="card-title aditii-title">Aditii</h5>
                             <p class="card-text aditii-text">Another project done at Mississippi Coding Academy using what I've learned with HTML/CSS</p>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-md-3 project-card graphics-card">
                     <div class="card" style="width: 18rem;">
-                        <img src="media/GraphicsUmbrella-Screenshot.png" class="card-img-top img-fluid graphics-img" alt="GraphicsUmbrella Project Preview">
+                        <img src="Media/GraphicsUmbrella-Screenshot.png" class="card-img-top img-fluid graphics-img" alt="GraphicsUmbrella Project Preview">
                         <div class="card-body graphics-body">
                             <h5 class="card-title graphics-title">Graphics-Umbrella</h5>
                             <p class="card-text graphics-text">Another mock webpage design combining HTML/CSS while at Mississippi Coding Academy</p>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-md-3 project-card venedor-card">
                     <div class="card" style="width: 18rem;">
-                        <img src="media/Venedor-Screenshot.png" class="card-img-top img-fluid venedor-img" alt="Venedor Project Preview">
+                        <img src="Media/Venedor-Screenshot.png" class="card-img-top img-fluid venedor-img" alt="Venedor Project Preview">
                         <div class="card-body venedor-body">
                             <h5 class="card-title venedor-title">Venedor</h5>
                             <p class="card-text venedor-text">A more complicated design and most recent to showcase my progress using HTML/CSS</p>
@@ -119,18 +119,45 @@
                     </div>
                 </div>
             </div>
+            <div class="row project-row2">
+                <div class="col-md-3"></div>
+                <div class="col-md-3 project-card bloom-card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Media/Restaurant-Screenshot_1.png" class="card-img-top img-fluid bloom-img" alt="Bloom Project Preview">
+                        <div class="card-body bloom-body">
+                            <h5 class="card-title bloom-title">Restaurant Page</h5>
+                            <p class="card-text bloom-text">Mock-up website. The About button is the only thing that works on here.</p>
+                            <a href="https://turner601.github.io/Restaurant/" class="btn btn-dark preview-button" target="_blank">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 project-card bloom-card">
+                    <div class="card" style="width: 18rem;">
+                        <img src="Media/Detroix-Screenshot.png" class="card-img-top img-fluid bloom-img" alt="Bloom Project Preview">
+                        <div class="card-body bloom-body">
+                            <h5 class="card-title bloom-title">Detroix</h5>
+                            <p class="card-text bloom-text">Another design for a mock-up website. One of the few first ones I worked on.</p>
+                            <a href="https://turner601.github.io/Detroix-Bootstrap/" class="btn btn-dark preview-button" target="_blank">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
         </div>
     </main>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-5">
                     <div class="social-links">
                         <a href="https://github.com/Turner601"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a>
                         <a href="mailto:turner.foote@gmail.com"><svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg></a>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-3">
+                    <a href="#header" class="back-to-top" title="Back To Top"><svg class="icon icon-arrow-up"><use xlink:href="#icon-arrow-up"></use></svg></a>
+                </div>
+                <div class="col-4">
                     <div class="colophon text-end">
                         <p class="colophon-text">Created By Turner Foote &copy; All Rights Reserved</p>
                     </div>
@@ -147,7 +174,12 @@
                 </path>
             </symbol>
             <symbol id="icon-envelope" viewBox="0 0 20 20">
-                <path d="M18 2c1.105 0 2 0.895 2 2v0 12c0 1.105-0.895 2-2 2v0h-16c-1.105 0-2-0.895-2-2v0-12c0-1.1 0.9-2 2-2h16zM13.63 11.1l6.37 4.9v-2l-5.12-3.9 5.12-4.1v-2l-10 8-10-8v2l5.12 4.1-5.12 3.9v2l6.37-4.9 3.63 2.9 3.63-2.9z"></path>
+                <path
+                    d="M18 2c1.105 0 2 0.895 2 2v0 12c0 1.105-0.895 2-2 2v0h-16c-1.105 0-2-0.895-2-2v0-12c0-1.1 0.9-2 2-2h16zM13.63 11.1l6.37 4.9v-2l-5.12-3.9 5.12-4.1v-2l-10 8-10-8v2l5.12 4.1-5.12 3.9v2l6.37-4.9 3.63 2.9 3.63-2.9z">
+                </path>
+            </symbol>
+            <symbol id="icon-arrow-up" viewBox="0 0 16 16">
+                <path d="M8 0.5l-7.5 7.5h4.5v8h6v-8h4.5z"></path>
             </symbol>
         </defs>
     </svg>

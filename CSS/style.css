@@ -29,6 +29,10 @@
     color: #d7c177;
 }
 
+.back-to-top {
+    scroll-behavior: smooth;
+}
+
 /* Start Header */
 
 .header {
@@ -62,12 +66,28 @@
     padding-bottom: 100px;
 }
 
+.project-card:focus, .project-card:hover {
+    transform: scale(1.2);
+}
+
 .jumbotron-text {
     font-family: 'Roboto', sans-serif;
 }
 
 .read-more-button:hover {
     color: #d7c177;
+}
+
+.language-text-item {
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-row1 {
+    padding-top: 25px;
+}
+
+.project-row2 {
+    padding-top: 25px;
 }
 
 /* Start Footer */
@@ -78,8 +98,11 @@
 }
 
 .icon-github, .icon-envelope {
-    max-width: 35px;
-    max-height: 35px;
+    font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.icon-envelope {
+    margin-left: 15px;
 }
 
 .colophon-text {
