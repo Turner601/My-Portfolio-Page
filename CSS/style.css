@@ -67,7 +67,7 @@
 }
 
 .project-card:focus, .project-card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .jumbotron-text {
@@ -76,6 +76,19 @@
 
 .read-more-button:hover {
     color: #d7c177;
+}
+
+.css-logo-main:hover, .html-logo-main:hover {
+    animation: roll 1s;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .language-text-item {
@@ -97,11 +110,11 @@
     padding: 25px;
 }
 
-.icon-github, .icon-envelope {
+.icon-github, .icon-envelope, .icon-linkedin {
     font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.icon-envelope {
+.icon-envelope, .icon-linkedin {
     margin-left: 15px;
 }
 
