@@ -33,6 +33,11 @@
     scroll-behavior: smooth;
 }
 
+.preview-code-button:hover, .live-preview-button:hover {
+    color: black;
+    background-color: #d7c177;
+}
+
 /* Start Header */
 
 .header {
@@ -67,15 +72,35 @@
 }
 
 .project-card:focus, .project-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .jumbotron-text {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .read-more-button:hover {
-    color: #d7c177;
+    color: black;
+    background-color: #d7c177;
+}
+
+.personal-headshot {
+    margin-top: 50px;
+    border-radius: 50% / 25%;
+    border: 4px solid black;
+}
+
+.css-logo-main, .html-logo-main {
+    border-radius: 50%;
+}
+
+.css-logo-main {
+    border: 4px solid #379ad6;
+}
+
+.html-logo-main {
+    border: 4px solid #e44d26;
 }
 
 .css-logo-main:hover, .html-logo-main:hover {
@@ -87,12 +112,14 @@
         transform: rotate(0);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(720deg);
     }
 }
 
 .language-text-item {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .project-row1 {
@@ -110,6 +137,7 @@
     padding: 25px;
 }
 
+/* Got this calculation from CSS Tricks which makes the icons responsive when changing screen sizes */
 .icon-github, .icon-envelope, .icon-linkedin {
     font-size: calc(14px + (28 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
@@ -131,6 +159,7 @@
     font-family: 'Lobster', cursive;
 }
 
+/* The before and after affect give me the lines to the left/right of the footer header */
 .about-me-header:before {
     content: "";
     display: block;
