@@ -72,11 +72,15 @@
     font-family: 'Lobster', cursive;
 }
 
-.main-section1, .main-section2, .main-section3 {
-    padding-top: 100px;
+.main-section1, .main-section2, .main-section4 {
+    padding-top: 150px;
 }
 
 .main-section3 {
+    padding-top: 25px;
+}
+
+.main-section4 {
     padding-bottom: 100px;
 }
 
@@ -236,4 +240,79 @@
 figcaption {
     padding: 25px;
     font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .social-nav .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .icon-github, .icon-envelope {
+        margin-right: 20px;
+    }
+    .main-section1 {
+        padding: 0;
+    }
+    .main-section1 .row {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .personal-headshot {
+        margin-left: 145px;
+    }
+    .main-section1 .about-me {
+        width: 100%;
+    }
+    .main-section3 {
+        padding-bottom: 25px;
+    }
+    .css-image, .html-image {
+        padding: 25px;
+    }
+    .language-text {
+        padding: 25px 0;
+    }
+    .project-card {
+        padding: 25px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation-list {
+        padding: 15px;
+    }
+    .nav-item {
+        font-size: 18px;
+    }
+    .social-nav {
+        padding: 15px;
+    }
+    .social-nav .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    .icon-github, .icon-envelope {
+        margin-right: 25px;
+    }
+    .main-section1 {
+        padding: 25px;
+    }
+    .main-section1 .row {
+        display: inline-flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .personal-headshot {
+        margin-left: 185px;
+    }
+    .main-section1 .about-me {
+        width: 100%;
+    }
+    .main-section3 {
+        padding-bottom: 25px;
+    }
+    .bloom-card, .aditii-card, .restaurant-card, .detroix-card {
+        padding-bottom: 25px;
+    }
 }
