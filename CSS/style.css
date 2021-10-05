@@ -55,21 +55,8 @@
 }
 
 .main {
-    background-color: var(--main-bg-color);
+    background-color: lightgrey;
     color: black;
-}
-
-.title-header, .languages-header-item, .projects-header-item {
-    font-family: 'Lobster', cursive;
-}
-
-.navigation-list {
-    padding: 25px;
-}
-
-.nav-item {
-    color: white;
-    font-family: 'Lobster', cursive;
 }
 
 .main-section1, .main-section2, .main-section4 {
@@ -80,17 +67,34 @@
     padding-top: 25px;
 }
 
-.main-section4 {
-    padding-bottom: 100px;
+.title-header, .languages-header-item, .projects-header-item {
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Oswald', sans-serif;
 }
 
-.project-card:focus, .project-card:hover {
-    transform: scale(1.08);
+.navigation-list {
+    padding: 25px;
+}
+
+.nav-item {
+    color: white;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Oswald', sans-serif;
+}
+
+.currently-know {
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
 }
 
 .jumbotron-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.read-more-button {
+    font-family: 'Oswald', sans-serif;
 }
 
 .read-more-button:hover {
@@ -131,8 +135,13 @@
 
 .language-text-item {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.main-section4 {
+    padding-bottom: 100px;
 }
 
 .project-row1 {
@@ -141,6 +150,28 @@
 
 .project-row2 {
     padding-top: 25px;
+}
+
+.project-card:focus, .project-card:hover {
+    transform: scale(1.08);
+}
+
+.card-title, .card-text {
+    font-family: 'Oswald', sans-serif;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.live-preview-button, .preview-code-button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    
 }
 
 /* Start Footer */
@@ -173,11 +204,12 @@
 
 .about-me-header {
     padding: 15px;
-    font-family: 'Lobster', cursive;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Oswald', sans-serif;
 }
 
-/* The before and after affect give me the lines to the left/right of the footer header. Found this on Google from a stackoverflow source  */
-.about-me-header:before {
+/* The before and after affect give me the lines to the left/right of the footer header. Found this on Google from a stackoverflow source. Edited: Took this off since I wasn't sure how to make it responsive  */
+/* .about-me-header:before {
     content: "";
     display: block;
     width: 750px;
@@ -197,7 +229,7 @@
     right: 0;
     top: 52.5%;
     position: absolute;
-}
+} */
 
 .about-me-header {
     padding-bottom: 50px;
@@ -205,6 +237,7 @@
 
 .about-me-text {
     padding-bottom: 100px;
+    font-family: 'Oswald', sans-serif;
     font-size: 18px;
 }
 
@@ -276,6 +309,35 @@ figcaption {
     .project-card {
         padding: 25px 0;
     }
+    /* .about-me-header:before {
+        content: "";
+        display: none;
+        width: 150px;
+        height: 2px;
+        background: black;
+        left: 0;
+        top: 51.2%;
+        position: absolute;
+    }
+    .about-me-header:after {
+        content: "";
+        display: none;
+        width: 150px;
+        height: 2px;
+        background: black;
+        right: 0;
+        top: 51.2%;
+        position: absolute;
+    } */
+    .military-picture1, .military-picture2 {
+        margin: 0;
+    }
+    .military-picture1 {
+        margin-bottom: 15px;
+    }
+    .hobbie-picture1, .hobbie-picture2 {
+        margin: 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -314,5 +376,79 @@ figcaption {
     }
     .bloom-card, .aditii-card, .restaurant-card, .detroix-card {
         padding-bottom: 25px;
+    }
+    /* .about-me-header:before {
+        content: "";
+        display: none;
+        width: 150px;
+        height: 2px;
+        background: black;
+        left: 0;
+        top: 51.2%;
+        position: absolute;
+    }
+    .about-me-header:after {
+        content: "";
+        display: none;
+        width: 150px;
+        height: 2px;
+        background: black;
+        right: 0;
+        top: 51.2%;
+        position: absolute;
+    } */
+    .military-picture1, .military-picture2 {
+        margin: 0;
+    }
+    .military-picture1 {
+        margin-bottom: 15px;
+    }
+    .hobbie-picture1 {
+        margin-right: 20px;
+    }
+    .hobbie-picture2 {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .social-nav .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+    /* .about-me-header:before {
+        content: "";
+        display: none;
+        width: 150px;
+        height: 2px;
+        background: black;
+        left: 0;
+        top: 51.2%;
+        position: absolute;
+    }
+    .about-me-header:after {
+        content: "";
+        display: none;
+        width: 150px;
+        height: 2px;
+        background: black;
+        right: 0;
+        top: 51.2%;
+        position: absolute;
+    } */
+    .military-picture1, .military-picture2 {
+        margin: 0;
+    }
+    .military-picture1 {
+        margin-right: 10px;
+    }
+    .military-picture2 {
+        margin-left: 10px;
+    }
+    .hobbie-picture1 {
+        margin-right: 20px;
+    }
+    .hobbie-picture2 {
+        margin-left: 20px;
     }
 }
