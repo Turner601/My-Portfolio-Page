@@ -198,6 +198,10 @@
 
 /* About Page */
 
+.personal-logo-about {
+    padding-bottom: 30px;
+}
+
 .social-nav {
     padding: 25px;
 }
